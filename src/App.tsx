@@ -18,10 +18,7 @@ function App() {
   const alterarStatusEvento = (id: number) => {
 
   }
-  const deletarEvento = (id: number) => {
-  
-  }
-
+ 
   const aplicarFiltro = (data: Date | null) => {
     setFiltro(data)
   }
@@ -37,7 +34,6 @@ function App() {
         <Card>
           <ListaDeEventos aoFiltroAplicado={aplicarFiltro} 
           aoAlterarStatus={alterarStatusEvento}
-           aoDeletarEvento={deletarEvento}
            />
         </Card>
       </div>
