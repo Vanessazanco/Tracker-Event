@@ -2,8 +2,12 @@ import React, { useState } from 'react';
 import { IEvento } from '../../interfaces/IEvento';
 import style from './Formulario.module.scss';
 import { obterId } from '../../util';
+import { useSetRecoilState } from 'recoil';
+import { listaDeEventosState } from '../../state/atom';
 
 const Formulario: React.FC = () => {
+  const setListaDeEventos = useSetRecoilState<IEvento[]>(listaDeEventosState)
+
   const [descricao, setDescricao] = useState('')
   const [dataInicio, setDataInicio] = useState('')
   const [horaInicio, setHoraInicio] = useState('')
@@ -24,6 +28,8 @@ const Formulario: React.FC = () => {
       fim: montarData(dataFim, horaFim),
       completo: false
     }
+    setListaDeEventos(listaAntiga =>[...listaAntiga,evento])
+    
     setDescricao('')
     setDataInicio('')
     setHoraInicio('')
