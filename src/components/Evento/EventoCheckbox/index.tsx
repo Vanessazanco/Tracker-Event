@@ -12,7 +12,6 @@ const EventoCheckbox: React.FC<{ evento: IEvento }> = ({ evento }) => {
     }
     eventoAlterado.completo = !eventoAlterado.completo
     atulizarEvento(eventoAlterado)
-
   }
 
   const estilos = [
