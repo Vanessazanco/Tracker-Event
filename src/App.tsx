@@ -15,9 +15,6 @@ function App() {
   const adicionarEvento = (evento: IEvento) => {
     evento.id = Math.round((new Date()).getTime() / 1000)
   }
-  const alterarStatusEvento = (id: number) => {
-
-  }
  
   const aplicarFiltro = (data: Date | null) => {
     setFiltro(data)
@@ -33,7 +30,6 @@ function App() {
         <hr />
         <Card>
           <ListaDeEventos aoFiltroAplicado={aplicarFiltro} 
-          aoAlterarStatus={alterarStatusEvento}
            />
         </Card>
       </div>
