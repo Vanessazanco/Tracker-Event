@@ -21,6 +21,7 @@
     "jsx": "react-jsx",
     "plugins": [{ "name": "typescript-plugin-css-modules" }],
     "downlevelIteration": true
+    
   },
   "include": [
     "src"
