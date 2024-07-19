@@ -1,0 +1,25 @@
+{
+    "eventos": [
+        {
+            "descricao": "Estudar React",
+            "inicio": "2024-07-19T09:00",
+            "fim": "2024-07-19T13:00",
+            "completo": false,
+            "id": 100
+          },
+          {
+            "descricao": "Estudar Java",
+            "inicio": "2024-07-26T09:00",
+            "fim": "2024-07-26T13:00",
+            "completo": false,
+            "id": 101
+          },
+          {
+            "descricao": "Estudar Recoil",
+            "inicio": "2024-07-19T09:00",
+            "fim": "2024-07-19T11:00",
+            "completo": false,
+            "id": 102
+          }
+        ]
+    }
